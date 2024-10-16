@@ -43,9 +43,9 @@ public class Personagem {
         int danoCausado = calcularDano();
 
         if (habilidade.length() == 0) {
-            System.out.format("%s atacou um %s e causou %d de dano físico.\n\n", nome, alvo, danoCausado);
+            System.out.format("%s ATACOU um %s e causou %d de dano físico.\n\n", nome, alvo, danoCausado);
         } else {
-            System.out.format("%s usou %s contra um %s e causou %d de dano físico.\n\n", nome, habilidade, alvo, habilidade1);
+            System.out.format("%s usou %s contra um %s e causou %d de dano físico.\n\n", nome, habilidade.toUpperCase(), alvo, habilidade1);
         }
 
     }
@@ -55,10 +55,13 @@ public class Personagem {
         int danoCausado = calcularMagia();
 
         if (habilidade.length() == 0) {
-            System.out.format("%s atacou um %s e causou %d de dano mágico.\n\n", nome, alvo, danoCausado);
-        } else {
-            System.out.format("%s usou %s contra um %s e causou %d de dano mágico.\n\n", nome, habilidade, alvo, habilidade1);
+            System.out.format("%s ATACOU um %s e causou %d de dano mágico.\n\n", nome, alvo, danoCausado);
+        } else if (habilidade == "Fogo" ) {
+            System.out.format("%s usou %s contra um %s e causou %d de dano mágico.\n\n", nome, habilidade.toUpperCase(), alvo, habilidade1);
+        } else if (habilidade == "Cura") {
+            System.out.format("%s usou %s em %s e curou %d de HP \n\n", nome, habilidade.toUpperCase(), alvo, habilidade1);
         }
         
     }
+
 }

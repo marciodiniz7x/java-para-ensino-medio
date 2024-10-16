@@ -19,9 +19,11 @@ public class App {
 
         // chamando o método e passando um argumento ("Goblin") que será o alvo
         heroi.atacar("Goblin", "");
-        mago.usarFeitico("Morcego", "");
+        mago.usarFeitico("Hercules", "Cura");
 
-        System.out.println(heroi.calcularDano());
+        // Chamando o método bau da classe Tesouro
+        String tesouro = Tesouro.bau();
+        System.out.println("Você abriu um baú e encontrou: " + tesouro + "\n\n");
 
     }
 }
