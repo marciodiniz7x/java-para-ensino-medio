@@ -6,9 +6,9 @@
 
 // ou pode importar tudo de uma vez usando .*
 
-import videos.*;
-import gui.*;
-import gui.botoes.*;
+import br.com.dzflix.gui.*;
+import br.com.dzflix.gui.botoes.*;
+import br.com.dzflix.videos.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
