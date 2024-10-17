@@ -7,7 +7,7 @@ public class App {
         // default -> package-private -> pacote privado
         
         FestaVip festa = new FestaVip();
-        festa.quantidadeCafe = 20;
+    
         festa.entrar();
         
     }
