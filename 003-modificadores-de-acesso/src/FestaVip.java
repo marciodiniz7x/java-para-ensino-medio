@@ -24,3 +24,4 @@ public class FestaVip {
         System.out.println("Comeu 5 salgados");
     }
 }
+
