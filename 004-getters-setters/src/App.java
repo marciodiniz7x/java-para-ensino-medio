@@ -1,7 +1,9 @@
+import classes.Conta;
 import classes.Pessoa;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        // classe Pessoa
         Pessoa pessoa = new Pessoa();
 
         // se ao invés de usar get e set eu tivesse usado os métodos que criei pegarNome e AlterarNome usaria:
@@ -21,5 +23,12 @@ public class App {
         System.out.println("Nome: " + pessoa.getNome());
         System.out.println("Idade: " + pessoa.getIdade());
         System.out.println("Altura" + pessoa.getAltura());
+
+        // classe Conta
+        Conta conta = new Conta();
+        System.out.println(conta.getSaldo());
+
+        conta.depositar(+100);
+        System.out.println(conta.getSaldo());
     }
 }
