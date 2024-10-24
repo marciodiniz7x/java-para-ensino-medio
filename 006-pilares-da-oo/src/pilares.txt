@@ -1,0 +1,11 @@
+E -> Encapsulamento:
+    Princípio da programação orientada a objetos (POO) que consiste em ocultar os detalhes internos de um objeto e permitir acesso apenas através de métodos públicos, garantindo segurança e controle sobre os dados.
+
+H -> Herença:
+    Mecanismo da POO em que uma classe (subclasse) herda atributos e métodos de outra classe (superclasse), permitindo o reuso de código e facilitando a criação de novas funcionalidades.
+
+P -> Polimorfismo:
+    Capacidade dos objetos de uma classe de se comportarem de diferentes maneiras em função do contexto. Isso permite que métodos com o mesmo nome tenham comportamentos distintos em classes diferentes.
+
+A -> Abstração:
+    Processo de esconder a complexidade de um sistema, mostrando apenas os detalhes essenciais para o usuário, permitindo a manipulação de objetos de maneira mais simples e eficaz.
