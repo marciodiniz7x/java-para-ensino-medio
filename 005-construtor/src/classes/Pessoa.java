@@ -8,11 +8,16 @@ public class Pessoa {
     private float altura;
 
     // <tipo-de-visibilidade> <nomeDaClasse()>
-    public Pessoa() {
+    public Pessoa(String nome, int idade, float altura) {
         System.out.println("Pessoa criada");
-        altura = 1.79f;
-        nome = "Naruto";
-        idade = 16;
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+
+    }
+
+    public void imprimirDados() {
+        System.out.format("Nome: %s \nIdade: %d \nAltura: %.2f", nome, idade, altura);
     }
 
     //Metodos getters e setters
