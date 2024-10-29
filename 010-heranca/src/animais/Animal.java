@@ -3,6 +3,9 @@ package animais;
 public class Animal {
     private String nome;
 
+    public Animal(String nome) {
+        this.nome = nome;
+    }
 
     public void comer() {
         System.out.printf("\n%s comeu", nome);
