@@ -1,4 +1,5 @@
 import animais.Cachorro;
+import animais.Dragao;
 import animais.Gato;
 
 public class App {
@@ -15,6 +16,15 @@ public class App {
         gato.beber();
         gato.comer();
         gato.miar();
+
+        Dragao dragao = new Dragao("Shyvana");
+        dragao.comer();
+        dragao.soltarFogo();
+        dragao.voar();
+        dragao.lutar();
+        dragao.lutar();
+        dragao.lutar();
+    
         
     }
 }
