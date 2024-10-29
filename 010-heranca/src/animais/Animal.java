@@ -2,15 +2,22 @@ package animais;
 
 public class Animal {
     private String nome;
-    // <nome> comeu
-    String mensagem = String.format("%s comeu", nome);
+
 
     public void comer() {
-        System.out.println(mensagem);
+        System.out.printf("\n%s comeu", nome);
     }
 
     public void beber() {
-        System.out.println(mensagem);
+        System.out.printf("\n%s bebeu", nome);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     
 }
