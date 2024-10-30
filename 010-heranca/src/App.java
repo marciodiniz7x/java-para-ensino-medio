@@ -1,6 +1,7 @@
 import animais.Cachorro;
 import animais.Dragao;
 import animais.Gato;
+import animais.Pombo;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,6 +26,11 @@ public class App {
         dragao.lutar();
         dragao.lutar();
     
+        Pombo pombo = new Pombo("Pombo Sedex");
+        pombo.fazerPruh();
+        pombo.enviarCarta();
+        pombo.enviarCarta();
+        pombo.getCartasEnviadas();
         
     }
 }
