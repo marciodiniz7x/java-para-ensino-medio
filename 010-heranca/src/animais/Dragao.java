@@ -2,7 +2,7 @@ package animais;
 
 import java.util.Random;
 
-public class Dragao extends Animal {
+public class Dragao extends Voadores {
 
     private int batalhasVencidas;
 
@@ -13,10 +13,6 @@ public class Dragao extends Animal {
 
     public void soltarFogo() {
         System.out.printf("\n%s soltou fogo", getNome());
-    }
-
-    public void voar() {
-        System.out.printf("\n%s voou", getNome());
     }
 
     public boolean lutar() {

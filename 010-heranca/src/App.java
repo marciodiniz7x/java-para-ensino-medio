@@ -28,6 +28,7 @@ public class App {
     
         Pombo pombo = new Pombo("Pombo Sedex");
         pombo.fazerPruh();
+        pombo.voar();
         pombo.enviarCarta();
         pombo.enviarCarta();
         pombo.getCartasEnviadas();
