@@ -1,6 +1,6 @@
 package jogo;
 
-public class Personagem {
+public abstract class Personagem {
     private String nome;
     private String classe;
     private int nivel;
@@ -18,9 +18,16 @@ public class Personagem {
         return informacoes;
     }
 
+    // <modificadorComAcesso> <modificadorSemAcesso> <retornoMetodo> nomeDOMetodo()
+    public final void atacarSemArma() {
+        System.out.println("O personagem atacou!");
+    }
+
     public void atacar() {
         System.out.println("O personagem atacou!");
     }
+
+    public abstract void atacarComArma();
 
     public String getNome() {
         return nome;

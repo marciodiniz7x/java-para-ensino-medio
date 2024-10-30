@@ -18,7 +18,7 @@ public class Arqueiro extends Personagem {
     }
 
     @Override
-    public void atacar() {
+    public void atacarComArma() {
         System.out.println("O arqueiro atacou com " + arma + "!");
     }
     
