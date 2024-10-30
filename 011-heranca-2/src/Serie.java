@@ -11,9 +11,15 @@ public class Serie {
     }
 
     // Métodos específicos da classe
-    public void imprimirInformacoes() {
-        // Nome: The... (2023) - 1 temporada(s)
-        System.out.printf("Nome: %s (%d) - %d temporada(s)", nome, ano, temporadas);
+    public String pegarInformacoes() {
+        String informacoes = String.format("Nome: %s (%d) - %d temporada(s)", nome, ano, temporadas);
+        return informacoes;
+    }
+
+    @Override
+    public String toString() {
+        String informacoes = String.format("Nome: %s (%d) - %d temporada(s)", nome, ano, temporadas);
+        return informacoes;
     }
 
     // Métodos Get e Set
