@@ -1,8 +1,7 @@
 package telefone;
 public class Telefone {
     private String numeroChip;
-    private Contatos contatos;
-    
+    private Contatos contatos; 
 
     public Telefone(String numeString) {
         this.numeroChip = numeString;
