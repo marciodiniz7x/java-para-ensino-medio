@@ -23,5 +23,10 @@ public class Contato {
         this.numero = numero;
     }
 
-    
+    @Override
+    public String toString() {
+        // Nome: <nome>\tNúmero: <numero>
+        String informacao = String.format("Nome: %s\tNúmero: %s", nome, numero);
+        return informacao;
+    }
 }

@@ -1,11 +1,20 @@
-import java.util.ArrayList;
-
 public class Telefone {
     private String numeroChip;
-    private ArrayList<Contato> contatos;
+    private Contatos contatos;
+    
 
     public Telefone(String numeString) {
         this.numeroChip = numeString;
-        this.contatos = new ArrayList<Contato>();
+        this.contatos = new Contatos();
     }
+
+    public Contatos getContatos() {
+        return contatos;
+    }
+
+
+    public String getNumeroChip() {
+        return numeroChip;
+    }
+    
 }
