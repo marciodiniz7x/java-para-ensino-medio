@@ -17,7 +17,7 @@ public class Chamadas {
     public String toString() {
         String informacao = "Chamadas:\n";
         for (Ligacao ligacao : chamadas) {
-            informacao += ligacao;
+            informacao += ligacao.toString() + "\n";
         }
         return informacao;
     }

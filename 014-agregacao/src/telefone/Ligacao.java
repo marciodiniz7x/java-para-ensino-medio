@@ -13,6 +13,11 @@ public class Ligacao {
         this.numeroDestino = numeroDestino;
     }
 
+    public Ligacao(Contato contatoOrigem, Contato contatoDestino) {
+        this.numeroOrigem = contatoOrigem.getNumero();
+        this.numeroDestino = contatoDestino.getNumero();
+    }
+
     public void ligar() {
         System.out.println("Ligando para " + numeroDestino);
         System.out.println("Chamando...");
