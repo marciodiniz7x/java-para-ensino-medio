@@ -16,13 +16,32 @@ public class Contatos {
         contatos.add(novoContato);
     }
 
+    public Contatos buscar(String palavraChave) {
+        // palavraChave = "Lu"
+        Contatos contatosFiltrados = new Contatos();
+        String palavraChaveMinusculo = palavraChave.toLowerCase();
+        for (Contato contato : contatos) {
+            // Esse contato começa com a minha palavraChave?
+            String nomeContatoMinusculo = contato.getNome().toLowerCase();
+            if(nomeContatoMinusculo.startsWith(palavraChaveMinusculo)) {
+                contatosFiltrados.adicionar(contato);
+            }
+            // Não -> pular para o próximo contato da lista
+        }
+        return contatosFiltrados;
+    }
+
     public ArrayList<Contato> getContatos() {
         return contatos;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        String informacao = "Contatos:\n";
+        for (Contato contato : contatos) {
+            informacao = informacao + contato.toString() + "\n";
+        }
+        return informacao;
     }
     
 }
