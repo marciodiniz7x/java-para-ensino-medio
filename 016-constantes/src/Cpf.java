@@ -15,4 +15,5 @@ public class Cpf {
         int primeiroDigitoVerificador = cpf.charAt(INDICE_PRIMEIRO_VERIFICADOR);
         int segundooDigitoVerificador = cpf.charAt(INDICE_SEGUNDO_VERIFICADOR);
     }
+
 }
