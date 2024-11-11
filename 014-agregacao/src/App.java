@@ -1,8 +1,5 @@
-
-
 import telefone.Contato;
 import telefone.Contatos;
-import telefone.Ligacao;
 import telefone.Telefone;
 
 public class App {
