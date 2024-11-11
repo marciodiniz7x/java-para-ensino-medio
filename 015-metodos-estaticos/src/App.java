@@ -1,7 +1,10 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Resultado:");
-        Matematica matematica = new Matematica();
-        System.out.println(matematica.calcularAreaCirculo(5));
+        
+        System.out.println(Matematica.somar(5, 10));
+        System.out.println(Matematica.calcularAreaCirculo(5));
+        System.out.println(Matematica.calcularAreaQuadrado(5));
+
     }
 }
