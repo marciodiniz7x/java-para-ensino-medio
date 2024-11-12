@@ -11,9 +11,14 @@ public class Cpf {
 
         // desconsidere os pontos
         // ABCDEFGHIJK
-        int regiao = cpf.charAt(INDICE_REGIAO_CPF);
-        int primeiroDigitoVerificador = cpf.charAt(INDICE_PRIMEIRO_VERIFICADOR);
-        int segundooDigitoVerificador = cpf.charAt(INDICE_SEGUNDO_VERIFICADOR);
+        int regiao = cpf.charAt(INDICE_REGIAO_CPF) - '0';
+        int primeiroDigitoVerificador = cpf.charAt(INDICE_PRIMEIRO_VERIFICADOR) - '0';
+        int segundooDigitoVerificador = cpf.charAt(INDICE_SEGUNDO_VERIFICADOR) - '0';
+
+        System.out.println("Região: " + regiao);
+        System.out.println("Digito Verificador 1: " + primeiroDigitoVerificador);
+        System.out.println("Dígito Verificador 2: " + segundooDigitoVerificador);
+
     }
 
 }
