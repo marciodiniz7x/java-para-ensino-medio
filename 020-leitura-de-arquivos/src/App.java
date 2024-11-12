@@ -1,31 +1,29 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+
+import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
-        String caminhaArquivo = "D:/dev/JAVA/java-para-ensino-medio/020-leitura-de-arquivos/src/usuarios.txt";
-        BufferedReader leitor = null;
+        String caminhoArquivo = "D:/dev/JAVA/java-para-ensino-medio/020-leitura-de-arquivos/src/usuarios.txt";
+        
 
         try {
+            // String resultado = arquivo.ler(caminhoArquivo);
+            // System.out.println(resultado);
+            Path caminhos = Paths.get(caminhoArquivo);
+            List<String> resultadoLista = Files.readAllLines(caminhos); // ler todas as linhas
+            String conteudo = String.join("\n", resultadoLista);
 
-            // código responsável por ler arquivo
-            FileReader leitorArquivo = new FileReader(caminhaArquivo);
-            leitor = new BufferedReader(leitorArquivo);
-
-            String linha = leitor.readLine(); // ler linha
-            System.out.println(linha);
-
-            linha = leitor.readLine();
-            System.out.println(linha);
-
-            linha = leitor.readLine();
-            System.out.println(linha);
-
+            System.out.println(conteudo);
         } catch (Exception erro) {
-            // tratamento de erro
-            System.out.println("Deu ruim!");
-            System.out.println(erro.getMessage());
+            JOptionPane.showMessageDialog(null, "Houve um problema na leitura do arquivo");
         }
+        
     }
 }
