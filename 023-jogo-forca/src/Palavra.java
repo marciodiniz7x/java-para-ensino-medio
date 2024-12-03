@@ -7,6 +7,26 @@ public class Palavra {
     private String palavraSecreta;
     private String palavraComChute;
 
+    public void gerarPalavraSecreta() {
+        var range = this.palavras.size() - 1;
+        var index = (int) (Math.random() * range);
+
+        this.palavraSecreta = this.palavras.get(index);
+        this.palavraComChute = "-".repeat(this.palavraSecreta.length());
+    }
+
+    public void revelarLetra(String letra) {
+        for (int i = 0; i < this.palavraSecreta.length(); i++) {
+            if (this.palavraSecreta.charAt(i) == letra.charAt(0)) {
+                this.palavraComChute = this.palavraComChute.substring(0, i) + letra + this.palavraComChute.substring(i + 1);
+            }
+        }
+    }
+
+    public boolean palavraCompleta() {
+        return !this.palavraComChute.contains("-");
+    }
+
     public List<String> getPalavras() {
         return palavras;
     }
@@ -19,9 +39,6 @@ public class Palavra {
         return palavraSecreta;
     }
 
-    public void setPalavraSecreta(String palavraSecreta) {
-        this.palavraSecreta = palavraSecreta;
-    }
 
     public String getPalavraComChute() {
         return palavraComChute;
